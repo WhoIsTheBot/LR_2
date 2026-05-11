@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FigureMotionApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+            
+            <Label Text="Лабораторна робота №2: Процеси"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Border Padding="20" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Spacing="15">
+                    <Label x:Name="StatusLabel"
+                           Text="Статус: Очікування запуску"
+                           FontSize="18"
+                           HorizontalOptions="Center" 
+                           TextColor="Gray"/>
+
+                    <Button x:Name="BtnStart"
+                            Text="Запустити Блокнот"
+                            Clicked="OnStartNotepadClicked"
+                            BackgroundColor="#512BD4"
+                            TextColor="White"
+                            HeightRequest="50" />
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
